@@ -11,7 +11,7 @@ export const phases: TimelinePhase[] = [
   {
     period: "2015 — 2019",
     title: "Bachelor's, Accounting & Finance",
-    org: "University",
+    org: "Lahore University of Management Sciences",
     description: "Built a quantitative foundation while discovering a passion for data, modeling, and automation.",
     skills: ["Excel", "Statistics", "Financial Modeling", "SQL (intro)"],
     achievements: ["Top-decile graduate.", "Final-year project on data-driven valuation."],
