@@ -21,19 +21,34 @@ function HomePage() {
     <Layout>
       {/* Hero */}
       <section className="bg-background py-24 md:py-32">
-        <div className="section-container">
-          <div className="flex items-center gap-2 text-sm text-muted-foreground">
-            <MapPin className="h-4 w-4 text-primary" /> Münster, Germany
+        <div className="section-container grid items-center gap-12 md:grid-cols-[1fr_auto]">
+          <div>
+            <div className="flex items-center gap-2 text-sm text-muted-foreground">
+              <MapPin className="h-4 w-4 text-primary" /> Münster, Germany
+            </div>
+            <h1 className="mt-4 max-w-4xl font-display text-5xl font-bold leading-[1.05] text-foreground md:text-7xl">
+              Hi, I'm <span className="text-primary">Salman</span>
+            </h1>
+            <p className="mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground md:text-xl">
+              I'm a <span className="font-semibold text-primary">Data Engineer & ML Engineer</span> turning
+              raw data into <span className="font-semibold text-primary">production-grade pipelines</span>,
+              lakehouses, and ML services. I care about clean architecture, observability, and shipping things
+              that actually move the business. <Link to="/connect" className="font-semibold text-primary underline underline-offset-4">Let's talk</Link>.
+            </p>
           </div>
-          <h1 className="mt-4 max-w-4xl font-display text-5xl font-bold leading-[1.05] text-foreground md:text-7xl">
-            Hi, I'm <span className="text-primary">Salman</span>
-          </h1>
-          <p className="mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground md:text-xl">
-            I'm a <span className="font-semibold text-primary">Data Engineer & ML Engineer</span> turning
-            raw data into <span className="font-semibold text-primary">production-grade pipelines</span>,
-            lakehouses, and ML services. I care about clean architecture, observability, and shipping things
-            that actually move the business. <Link to="/connect" className="font-semibold text-primary underline underline-offset-4">Let's talk</Link>.
-          </p>
+          <div className="justify-self-center md:justify-self-end">
+            <div className="relative h-56 w-56 overflow-hidden rounded-2xl border border-border bg-card shadow-[0_12px_40px_-16px_oklch(0_0_0/0.4)] md:h-72 md:w-72">
+              <div className="absolute inset-0 bg-gradient-to-br from-primary-muted via-card to-accent" />
+              <div className="absolute inset-0 flex flex-col items-center justify-center gap-2 text-center">
+                <div className="flex h-16 w-16 items-center justify-center rounded-full border-2 border-dashed border-primary/60 font-display text-2xl font-bold text-primary">
+                  SM
+                </div>
+                <p className="px-4 font-mono text-xs uppercase tracking-wider text-muted-foreground">
+                  Your photo here
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
