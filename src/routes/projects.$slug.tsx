@@ -46,7 +46,7 @@ function Section({ title, children }: { title: string; children: React.ReactNode
 }
 
 function CaseStudyPage() {
-  const { project } = Route.useLoaderData();
+  const { project } = Route.useLoaderData() as { project: import("@/lib/projects").Project };
   return (
     <Layout>
       <section className={`relative overflow-hidden bg-gradient-to-br ${project.gradient} py-24`}>
