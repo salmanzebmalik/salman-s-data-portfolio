@@ -36,8 +36,8 @@ function ConnectPage() {
 
           <div className="mt-10 flex justify-center gap-4">
             {[
-              { href: "https://github.com", icon: Github, label: "GitHub" },
-              { href: "https://linkedin.com", icon: Linkedin, label: "LinkedIn" },
+              { href: "https://github.com/salmanzebmalik", icon: Github, label: "GitHub" },
+              { href: "https://linkedin.com/in/salmanzebmalik", icon: Linkedin, label: "LinkedIn" },
               { href: "https://kaggle.com", icon: Trophy, label: "Kaggle" },
             ].map(({ href, icon: Icon, label }) => (
               <a
