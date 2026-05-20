@@ -3,7 +3,7 @@ import { Layout } from "@/components/Layout";
 import { ProjectTile } from "@/components/ProjectTile";
 import { projects } from "@/lib/projects";
 
-export const Route = createFileRoute("/projects")({
+export const Route = createFileRoute("/projects/")({
   head: () => ({
     meta: [
       { title: "Projects — Muhammad Salman Malik" },
