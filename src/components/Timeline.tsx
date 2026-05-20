@@ -14,31 +14,49 @@ export const phases: TimelinePhase[] = [
     org: "Lahore University of Management Sciences",
     description: "I completed a Bachelor’s in Accounting and Finance with a CS minor, gaining a solid foundation in quantitative analysis, data-driven decision-making, and statistical analysis. My finance courses sharpened my ability to interpret complex datasets, while my CS minor provided me with technical skills in Python, SQL, and C++, enabling me to work with data structures and algorithms.",
     skills: ["Quantitative Analysis", "Statistics", "Financial Modeling", "SQL", "Python", "Data-driven decision-making"],
-    achievements: ["Minor: Computer Science", "Overall Grade: 3.3/4.0", "Developed hands-on experience in financial modeling, data visualization, and statistical analysis, which are essential for data-driven decision-making and predictive modeling.", "Applied business and technical knowledge to approach problems analytically, using programming skills to tackle real-world business challenges.", "Learned to translate technical concepts into business solutions, which is critical for AI/ML applications"],
+    achievements: [
+      "Minor: Computer Science", 
+      "Overall Grade: 3.3/4.0", 
+      "Developed hands-on experience in financial modeling, data visualization, and statistical analysis, which are essential for data-driven decision-making and predictive modeling.", 
+      "Applied business and technical knowledge to approach problems analytically, using programming skills to tackle real-world business challenges.", 
+      "Learned to translate technical concepts into business solutions, which is critical for AI/ML applications"
+    ],
   },
   {
     period: "May, 2022 — February, 2024",
     title: "Technical Business Analyst",
-    org: "SHAPE Global Ltd",
+    org: "SHAPE Global Ltd.",
     description: "Owned reporting and analytics for international operations — turned messy spreadsheets into governed pipelines.",
     skills: ["SQL", "Python", "Power BI", "ETL"],
-    achievements: ["Automated 12 monthly reports.", "Cut close cycle by 5 days."],
+    achievements: [
+      "Designed and owned a statistical scoring framework for employee performance surveys (normalization, weighting, benchmarking), translating thousands of responses across 5–6 client organizations into actionable HR insights and interventions.",
+      "Built end-to-end ETL pipelines (Python, MySQL, SQL Server) for survey data ingestion, transformation, and validation, reducing reporting turnaround time by an estimated 60–80% and improving data reliability for client delivery.",
+      "Developed automated, client-facing Power BI dashboards (multi-page models, DAX measures) enabling real-time access to performance, wellbeing, and benchmark metrics, eliminating manual report generation.",
+      "Conducted advanced exploratory and comparative analysis (trend analysis, segmentation, sensitivity checks, industry benchmarks) to surface drivers of engagement and turnover across 1,000+ employees.",
+      "Partnered with product, business, and leadership teams to define survey metrics, analytics features, and reporting logic, ensuring alignment between data models, product capabilities, and client decision needs."
+    ],
   },
   {
     period: "February, 2024 — July, 2024",
     title: "Technical Business Analyst",
-    org: "Rhodium Tech",
+    org: "Rhodium Tech Ltd.",
     description: "Designed and shipped end-to-end pipelines on Databricks with the medallion architecture.",
     skills: ["PySpark", "Databricks", "Delta Lake", "Airflow", "Docker"],
-    achievements: ["Delivered lakehouse for 6 domains.", "Mentored 3 junior engineers."],
+    achievements: [
+      "Led end-to-end data initiatives at a startup by translating unstructured business questions into analytical models, datasets, and dashboards used by investors, engineers, and clients for market entry and capacity planning decisions.",
+      "Designed and automated large-scale data pipelines (Python, MySQL, MongoDB) ingesting millions of records from web scraping and external sources, improving data availability and reducing manual data preparation effort by an estimated 40–60%.",
+      "Built national-level demand forecasts (5–10 year horizon) for Pakistan’s EV market using time-series models (ARIMA, CAGR, regression) and scenario analysis, supporting investment sizing, inventory planning, and logistics strategy.",
+      "Developed structured market intelligence datasets (restaurants, EV charging outlets) via Google Maps scraping and schema design, enabling targeted sales outreach, backend-ready databases, and scalable internal analytics products.",
+      "Created investor-facing analytical outputs (scenario models, dashboards, financial exhibits) combining forecasting and market data, directly supporting 15–20M PKR fundraising discussions and strategic positioning."
+    ],
   },
   {
     period: "April, 2024 — Present",
     title: "Master's, Information Systems",
     org: "Universität Münster",
-    description: "Deepening expertise in ML, distributed systems, and agentic AI — bridging research with production.",
+    description: "I am currently pursuing a Master’s in Information Systems at Uni Münster, specializing in Business Intelligence and Information Systems Development. My studies focus on predictive modeling, data pipeline development, and advanced analytics to solve real-world business challenges.",
     skills: ["Supervised Machine Learning", "Unsupervised Machine Learning", "Mining Massive Datasets", "Advance Concepts in Software Engineering", "Data Integration", "Logic Specification and Programming"],
-    achievements: ["Research on LLM-based analytics agents.", "Open-source contributions."],
+    achievements: ["The program combines technical development with business strategy, enabling me to apply AI/ML techniques in data-driven decision-making and intelligent system development across industries."],
   },
 ];
 

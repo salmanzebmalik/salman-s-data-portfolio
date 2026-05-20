@@ -6,7 +6,7 @@ export const Route = createFileRoute("/connect")({
   head: () => ({
     meta: [
       { title: "Connect — Muhammad Salman Malik" },
-      { name: "description", content: "Get in touch with Muhammad Salman Malik." },
+      { name: "description", content: "Get in touch with me." },
     ],
   }),
   component: ConnectPage,
@@ -31,7 +31,7 @@ function ConnectPage() {
             href="mailto:salman@example.com"
             className="mt-10 inline-flex items-center gap-3 rounded-full bg-primary px-6 py-3 font-display text-base font-semibold text-primary-foreground transition-transform hover:-translate-y-0.5"
           >
-            <Mail className="h-5 w-5" /> salman@example.com
+            <Mail className="h-5 w-5" /> salmanzaibmalik@gmail.com
           </a>
 
           <div className="mt-10 flex justify-center gap-4">
