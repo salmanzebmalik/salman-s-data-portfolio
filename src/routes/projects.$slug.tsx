@@ -112,6 +112,14 @@ function CaseStudyPage() {
                   <dd className="font-medium text-foreground">{project.technologies.join(", ")}</dd>
                 </div>
               </dl>
+              <a
+                href={project.repoUrl}
+                target="_blank"
+                rel="noreferrer noopener"
+                className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-md border border-border bg-background px-4 py-2 text-sm font-medium text-foreground hover:border-primary hover:text-primary"
+              >
+                <Github className="h-4 w-4" /> Source on GitHub
+              </a>
             </aside>
           </div>
         </div>
