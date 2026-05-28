@@ -1,5 +1,5 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, CheckCircle2, Github } from "lucide-react";
 import { Layout } from "@/components/Layout";
 import { getProject, type Project } from "@/lib/projects";
 
