@@ -10,6 +10,8 @@ export type Project = {
   technologies: string[];
   workflow: string[];
   outcomes: string[];
+  repoUrl: string;
+  image: string;
 };
 
 export const projects: Project[] = [
