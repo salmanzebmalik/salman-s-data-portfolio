@@ -36,6 +36,8 @@ export const projects: Project[] = [
       "Single source of truth across 6 business domains.",
       "Self-serve analytics enabled for non-technical teams.",
     ],
+    repoUrl: "https://github.com/yourusername/medallion-lakehouse",
+    image: "/placeholder.svg",
   },
   {
     slug: "etl-pyspark-warehouse",
@@ -54,6 +56,8 @@ export const projects: Project[] = [
       "Orchestrated daily DAGs in Airflow.",
     ],
     outcomes: ["4× faster job runtime.", "Cost savings of ~30% on cluster spend.", "Test-coverage above 80%."],
+    repoUrl: "https://github.com/yourusername/etl-pyspark-warehouse",
+    image: "/placeholder.svg",
   },
   {
     slug: "churn-ml-fastapi",
@@ -72,6 +76,8 @@ export const projects: Project[] = [
       "Deployed via Docker to staging.",
     ],
     outcomes: ["AUC 0.91 on hold-out set.", "12% reduction in monthly churn.", "Sub-50ms inference latency."],
+    repoUrl: "https://github.com/yourusername/churn-ml-fastapi",
+    image: "/placeholder.svg",
   },
   {
     slug: "agentic-ai-analyst",
@@ -89,6 +95,8 @@ export const projects: Project[] = [
       "Shipped Slack interface.",
     ],
     outcomes: ["Analyst time -40%.", "85% answer accuracy on benchmark."],
+    repoUrl: "https://github.com/yourusername/agentic-ai-analyst",
+    image: "/placeholder.svg",
   },
   {
     slug: "powerbi-finance",
@@ -101,6 +109,8 @@ export const projects: Project[] = [
     technologies: ["Power BI", "DAX", "SQL"],
     workflow: ["Modeled tabular schema.", "Authored DAX measures.", "Designed exec dashboards."],
     outcomes: ["Monthly close cycle shortened by 5 days.", "Adopted across 4 departments."],
+    repoUrl: "https://github.com/yourusername/powerbi-finance",
+    image: "/placeholder.svg",
   },
   {
     slug: "realtime-streaming",
@@ -113,6 +123,8 @@ export const projects: Project[] = [
     technologies: ["Kafka", "Spark Streaming", "Delta Lake"],
     workflow: ["Producers from web/app.", "Stream into Delta.", "Materialize KPIs."],
     outcomes: ["Latency under 30s end-to-end."],
+    repoUrl: "https://github.com/yourusername/realtime-streaming",
+    image: "/placeholder.svg",
   },
 ];
 
