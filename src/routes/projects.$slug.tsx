@@ -179,16 +179,27 @@ function CaseStudyPage() {
             <h3 className="mt-2 font-display text-2xl font-bold text-foreground md:text-3xl">
               Results & Findings
             </h3>
-            <div className="mt-6 grid gap-4 sm:grid-cols-2">
+
+            <figure className="mt-6 overflow-hidden rounded-xl border border-border bg-card">
+              <img
+                src={project.image}
+                alt={`${project.title} — results visual`}
+                className="aspect-[16/9] w-full object-cover"
+                loading="lazy"
+              />
+              <figcaption className="border-t border-border px-4 py-2 text-xs text-muted-foreground">
+                Placeholder image — replace with a chart, dashboard, or screenshot.
+              </figcaption>
+            </figure>
+
+            <ul className="mt-6 space-y-3">
               {project.outcomes.map((o) => (
-                <div
-                  key={o}
-                  className="rounded-lg border border-border bg-gradient-to-br from-primary-muted to-transparent p-5"
-                >
-                  <p className="font-display text-base font-semibold text-foreground">{o}</p>
-                </div>
+                <li key={o} className="flex items-start gap-3">
+                  <CheckCircle2 className="mt-0.5 h-5 w-5 flex-shrink-0 text-primary" />
+                  <span className="text-foreground/90">{o}</span>
+                </li>
               ))}
-            </div>
+            </ul>
           </div>
 
           {/* Application in real life */}
