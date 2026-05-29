@@ -1,5 +1,6 @@
 import { Link } from "@tanstack/react-router";
-import { Github, Linkedin, Trophy } from "lucide-react";
+import { Github, Linkedin, Trophy, Menu, X } from "lucide-react";
+import { useState } from "react";
 import { ThemeToggle } from "./ThemeToggle";
 
 const links = [
@@ -10,10 +11,12 @@ const links = [
 ] as const;
 
 export function Navbar() {
+  const [open, setOpen] = useState(false);
+
   return (
     <header className="sticky top-0 z-40 border-b border-border/60 bg-background/80 backdrop-blur-md">
       <div className="section-container flex h-16 items-center justify-between">
-        <Link to="/" className="font-display text-lg font-bold text-primary">
+        <Link to="/" className="font-display text-lg font-bold text-primary" onClick={() => setOpen(false)}>
           Salman<span className="text-foreground">.</span>
         </Link>
 
@@ -33,20 +36,62 @@ export function Navbar() {
 
         <div className="flex items-center gap-3">
           <a href="https://github.com/salmanzebmalik" target="_blank" rel="noreferrer" aria-label="GitHub"
-            className="text-muted-foreground transition-colors hover:text-primary">
+            className="hidden text-muted-foreground transition-colors hover:text-primary sm:inline-flex">
             <Github className="h-4 w-4" />
           </a>
           <a href="https://linkedin.com/in/salmanzebmalik" target="_blank" rel="noreferrer" aria-label="LinkedIn"
-            className="text-muted-foreground transition-colors hover:text-primary">
+            className="hidden text-muted-foreground transition-colors hover:text-primary sm:inline-flex">
             <Linkedin className="h-4 w-4" />
           </a>
           <a href="https://www.kaggle.com/salmanzebmalik" target="_blank" rel="noreferrer" aria-label="Kaggle"
-            className="text-muted-foreground transition-colors hover:text-primary">
+            className="hidden text-muted-foreground transition-colors hover:text-primary sm:inline-flex">
             <Trophy className="h-4 w-4" />
           </a>
           <div className="ml-2"><ThemeToggle /></div>
+          <button
+            type="button"
+            aria-label={open ? "Close menu" : "Open menu"}
+            aria-expanded={open}
+            onClick={() => setOpen((v) => !v)}
+            className="inline-flex h-9 w-9 items-center justify-center rounded-md text-muted-foreground transition-colors hover:text-primary md:hidden"
+          >
+            {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+          </button>
         </div>
       </div>
+
+      {open && (
+        <nav className="border-t border-border/60 bg-background/95 backdrop-blur-md md:hidden">
+          <div className="section-container flex flex-col py-3">
+            {links.map((l) => (
+              <Link
+                key={l.to}
+                to={l.to}
+                onClick={() => setOpen(false)}
+                className="rounded-md px-2 py-3 text-base font-medium text-muted-foreground transition-colors hover:text-primary"
+                activeProps={{ className: "text-primary" }}
+                activeOptions={{ exact: l.to === "/" }}
+              >
+                {l.label}
+              </Link>
+            ))}
+            <div className="mt-2 flex items-center gap-4 border-t border-border/60 px-2 pt-3">
+              <a href="https://github.com/salmanzebmalik" target="_blank" rel="noreferrer" aria-label="GitHub"
+                className="text-muted-foreground transition-colors hover:text-primary">
+                <Github className="h-5 w-5" />
+              </a>
+              <a href="https://linkedin.com/in/salmanzebmalik" target="_blank" rel="noreferrer" aria-label="LinkedIn"
+                className="text-muted-foreground transition-colors hover:text-primary">
+                <Linkedin className="h-5 w-5" />
+              </a>
+              <a href="https://www.kaggle.com/salmanzebmalik" target="_blank" rel="noreferrer" aria-label="Kaggle"
+                className="text-muted-foreground transition-colors hover:text-primary">
+                <Trophy className="h-5 w-5" />
+              </a>
+            </div>
+          </div>
+        </nav>
+      )}
     </header>
   );
 }
