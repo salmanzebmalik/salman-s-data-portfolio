@@ -46,15 +46,6 @@ const PIPELINE_ACCENTS = [
   "border-l-fuchsia-500",
 ];
 
-const PIPELINE_LABELS = [
-  "Data Ingestion",
-  "Transformation Layer",
-  "Modeling & Features",
-  "Orchestration",
-  "Monitoring & Quality",
-  "Deployment",
-];
-
 function CaseStudyPage() {
   const { project } = Route.useLoaderData() as { project: Project };
 
@@ -154,7 +145,7 @@ function CaseStudyPage() {
               How it was built
             </h3>
             <div className="mt-6 space-y-4">
-              {project.workflow.map((step, i) => (
+              {project.methodology.map((item, i) => (
                 <div
                   key={i}
                   className={`rounded-lg border border-border border-l-4 bg-card p-5 ${PIPELINE_ACCENTS[i % PIPELINE_ACCENTS.length]}`}
@@ -163,9 +154,9 @@ function CaseStudyPage() {
                     <span className="font-display text-sm font-bold text-primary">0{i + 1}</span>
                     <div>
                       <h4 className="font-display text-base font-semibold text-foreground">
-                        {PIPELINE_LABELS[i] ?? `Stage ${i + 1}`}
+                        {item.step}
                       </h4>
-                      <p className="mt-1 text-sm text-foreground/80">{step}</p>
+                      <p className="mt-1 text-sm text-foreground/80">{item.description}</p>
                     </div>
                   </div>
                 </div>
@@ -180,7 +171,7 @@ function CaseStudyPage() {
               Results & Findings
             </h3>
 
-            <figure className="mt-6 overflow-hidden rounded-xl border border-border bg-card">
+            {/* <figure className="mt-6 overflow-hidden rounded-xl border border-border bg-card">
               <img
                 src={project.image}
                 alt={`${project.title} — results visual`}
@@ -190,7 +181,7 @@ function CaseStudyPage() {
               <figcaption className="border-t border-border px-4 py-2 text-xs text-muted-foreground">
                 Placeholder image — replace with a chart, dashboard, or screenshot.
               </figcaption>
-            </figure>
+            </figure> */}
 
             <ul className="mt-6 space-y-3">
               {project.outcomes.map((o) => (
@@ -209,11 +200,7 @@ function CaseStudyPage() {
               Application in real life
             </h3>
             <p className="mt-4 text-muted-foreground">
-              In production settings, {project.title.toLowerCase()} translates directly into faster
-              decisions and more reliable {project.tag.toLowerCase()} workflows. The same approach
-              generalizes to teams that need to turn raw, fragmented inputs into trustworthy,
-              analytics-ready outputs — powering dashboards, downstream models, and day-to-day
-              operations without adding fragile glue code.
+              {project.application}
             </p>
           </div>
 

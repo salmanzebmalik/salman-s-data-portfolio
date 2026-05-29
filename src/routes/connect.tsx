@@ -24,21 +24,21 @@ function ConnectPage() {
             Let's connect
           </h1>
           <p className="mt-4 text-muted-foreground">
-            Always open to interesting data, ML, and agentic AI conversations.
+            Always open to interesting data, ML, and software development conversations.
           </p>
 
           <a
-            href="mailto:salman@example.com"
+            href="mailto:salman.malik@uni-muenster.de"
             className="mt-10 inline-flex items-center gap-3 rounded-full bg-primary px-6 py-3 font-display text-base font-semibold text-primary-foreground transition-transform hover:-translate-y-0.5"
           >
-            <Mail className="h-5 w-5" /> salmanzaibmalik@gmail.com
+            <Mail className="h-5 w-5" /> salman.malik@uni-muenster.de
           </a>
 
           <div className="mt-10 flex justify-center gap-4">
             {[
               { href: "https://github.com/salmanzebmalik", icon: Github, label: "GitHub" },
               { href: "https://linkedin.com/in/salmanzebmalik", icon: Linkedin, label: "LinkedIn" },
-              { href: "https://kaggle.com", icon: Trophy, label: "Kaggle" },
+              { href: "https://www.kaggle.com/salmanzebmalik", icon: Trophy, label: "Kaggle" },
             ].map(({ href, icon: Icon, label }) => (
               <a
                 key={label}

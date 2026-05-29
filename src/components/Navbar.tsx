@@ -32,15 +32,15 @@ export function Navbar() {
         </nav>
 
         <div className="flex items-center gap-3">
-          <a href="https://github.com" target="_blank" rel="noreferrer" aria-label="GitHub"
+          <a href="https://github.com/salmanzebmalik" target="_blank" rel="noreferrer" aria-label="GitHub"
             className="text-muted-foreground transition-colors hover:text-primary">
             <Github className="h-4 w-4" />
           </a>
-          <a href="https://linkedin.com" target="_blank" rel="noreferrer" aria-label="LinkedIn"
+          <a href="https://linkedin.com/in/salmanzebmalik" target="_blank" rel="noreferrer" aria-label="LinkedIn"
             className="text-muted-foreground transition-colors hover:text-primary">
             <Linkedin className="h-4 w-4" />
           </a>
-          <a href="https://kaggle.com" target="_blank" rel="noreferrer" aria-label="Kaggle"
+          <a href="https://www.kaggle.com/salmanzebmalik" target="_blank" rel="noreferrer" aria-label="Kaggle"
             className="text-muted-foreground transition-colors hover:text-primary">
             <Trophy className="h-4 w-4" />
           </a>
