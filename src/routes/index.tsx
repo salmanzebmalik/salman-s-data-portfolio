@@ -30,10 +30,7 @@ function HomePage() {
               Hi, I'm <span className="text-primary">Salman</span>
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground md:text-xl">
-              I'm a <span className="font-semibold text-primary">Data Engineer & ML Engineer</span> turning
-              raw data into <span className="font-semibold text-primary">production-grade pipelines</span>,
-              lakehouses, and ML services. I care about clean architecture, observability, and shipping things
-              that actually move the business. <Link to="/connect" className="font-semibold text-primary underline underline-offset-4">Let's talk</Link>.
+              I am a <span className="font-semibold text-primary">Data Engineering</span> and <span className="font-semibold text-primary">Business Intelligence</span> professional focused on building reliable data pipelines, analytical models, dashboards, and applied machine learning solutions that turn raw data into business value.
             </p>
           </div>
           <div className="justify-self-center md:justify-self-end">

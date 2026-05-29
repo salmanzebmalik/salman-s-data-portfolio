@@ -12,7 +12,7 @@ export const phases: TimelinePhase[] = [
     period: "August, 2018 — May, 2022",
     title: "BSc. (Honors), Accounting & Finance",
     org: "Lahore University of Management Sciences",
-    description: "I completed a Bachelor’s in Accounting and Finance with a CS minor, gaining a solid foundation in quantitative analysis, data-driven decision-making, and statistical analysis. My finance courses sharpened my ability to interpret complex datasets, while my CS minor provided me with technical skills in Python, SQL, and C++, enabling me to work with data structures and algorithms.",
+    description: "I completed my Bachelor’s in Accounting and Finance with a minor in Computer Science, combining business understanding with technical problem-solving. Finance trained me to interpret numbers in a decision-making context, while computer science introduced me to programming, databases, data structures, and algorithms — forming the foundation for my path into data engineering, BI, and analytics.",
     skills: ["Quantitative Analysis", "Statistics", "Financial Modeling", "SQL", "Python", "Data-driven decision-making"],
     achievements: [
       "Minor: Computer Science", 

@@ -22,10 +22,7 @@ function AboutPage() {
             Muhammad Salman Malik
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground">
-            I started in finance, fell for data, and never looked back. Today I design and ship
-            <span className="text-primary"> end-to-end data platforms </span> — from ingestion and
-            transformation on Spark, through governed Gold layers, to ML services and agentic AI
-            on top. I like quiet code, observable systems, and tight feedback loops.
+            My journey started in finance, where I learned how organizations make decisions through numbers. That curiosity led me into data — first through analytics and BI, then into pipelines, data platforms, machine learning, and AI-enabled systems. Today, I build <span className="text-primary">end-to-end data solutions</span> that transform raw, fragmented data into reliable insights and decision-ready products.
           </p>
         </div>
       </section>

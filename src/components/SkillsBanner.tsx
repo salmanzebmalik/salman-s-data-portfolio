@@ -1,9 +1,58 @@
 const SKILLS = [
-  "Python", "SQL", "PySpark", "ETL/ELT", "Data Warehousing",
-  "Medallion Architecture", "Power BI", "DAX", "Docker", "FastAPI",
-  "Databricks", "Hadoop", "MapReduce", "Agentic AI", "Machine Learning",
-  "GitHub", "Gold Layer", "Analytics",
+  "Python",
+  "SQL",
+  "PySpark",
+  "Pandas",
+  "NumPy",
+  "DAX",
+
+  "ETL/ELT",
+  "Data Pipelines",
+  "Data Integration",
+  "Data Cleaning",
+  "Data Validation",
+  "Data Warehousing",
+  "Data Modeling",
+  "Dimensional Modeling",
+  "Star Schema",
+  "Medallion Architecture",
+  "Data Lakehouse",
+
+  "SQL Server",
+  "MySQL",
+  "PostgreSQL",
+  "MongoDB",
+
+  "Apache Spark",
+  "Hadoop",
+  "MapReduce",
+  "Databricks",
+
+  "Power BI",
+  "KPI Dashboards",
+  "Business Reporting",
+  "Data Visualization",
+  "Reporting Automation",
+  "Forecasting",
+  "Time-Series Analysis",
+  "Statistical Analysis",
+
+  "Machine Learning",
+  "Scikit-learn",
+  "XGBoost",
+  "PyTorch",
+  "SHAP",
+  "Model Evaluation",
+  "ML Pipelines",
+
+  "FastAPI",
+  "Docker",
+  "Git",
+  "GitHub",
+  "Jupyter",
+  "GitHub Copilot"
 ];
+
 
 export function SkillsBanner() {
   const row = [...SKILLS, ...SKILLS];
