@@ -37,7 +37,7 @@ function HomePage() {
             </p>
           </div>
           <div className="justify-self-center md:justify-self-end">
-            <div className="relative h-56 w-56 overflow-hidden rounded-2xl border border-border bg-card shadow-[0_12px_40px_-16px_oklch(0_0_0/0.4)] md:h-72 md:w-72">
+            <div className="relative h-56 w-56 overflow-hidden rounded-full border border-border bg-card shadow-[0_12px_40px_-16px_oklch(0_0_0/0.4)] md:h-72 md:w-72">
               <div className="absolute inset-0 bg-gradient-to-br from-primary-muted via-card to-accent" />
               <div className="absolute inset-0 flex flex-col items-center justify-center gap-2 text-center">
                 <div className="absolute inset-0 overflow-hidden rounded-[inherit]">
