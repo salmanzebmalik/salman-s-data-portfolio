@@ -4,6 +4,7 @@ import { SkillsBanner } from "@/components/SkillsBanner";
 import { ProjectTile } from "@/components/ProjectTile";
 import { projects } from "@/lib/projects";
 import { MapPin } from "lucide-react";
+import { useTheme } from "@/lib/theme";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -17,6 +18,8 @@ export const Route = createFileRoute("/")({
 
 function HomePage() {
   const featured = projects.filter((p) => p.featured);
+  const { theme } = useTheme();
+  const primarySrc = theme === "dark" ? "/images/white.png" : "/images/black.png";
   return (
     <Layout>
       {/* Hero */}
@@ -39,9 +42,17 @@ function HomePage() {
               <div className="absolute inset-0 flex flex-col items-center justify-center gap-2 text-center">
                 <div className="absolute inset-0 overflow-hidden rounded-[inherit]">
                 <img
-                  src="/images/profile.png"
+                  key={primarySrc}
+                  src={primarySrc}
                   alt="Salman Malik"
                   className="h-full w-full object-cover"
+                  onError={(e) => {
+                    const img = e.currentTarget;
+                    if (!img.dataset.fallback) {
+                      img.dataset.fallback = "1";
+                      img.src = "/images/profile.png";
+                    }
+                  }}
                 />
               </div>
               </div>
