@@ -22,6 +22,54 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    "slug": "airflow-etl-retail-analytics",
+    "title": "Airflow & Docker ETL Retail Analytics Pipeline",
+    "subtitle": "End-to-end Bronze→Silver→Gold pipeline for retail analytics with orchestration and dashboards",
+    "tag": "Data Engineering",
+    "gradient": "from-blue-500/40 via-cyan-500/20 to-transparent",
+    "featured": true,
+    "objective": "This project demonstrates a full end-to-end ETL pipeline for retail analytics, starting from raw CRM and ERP CSV files, moving through cleansing and transformation, and culminating in business-ready analytical tables. The pipeline follows the Medallion Architecture with Bronze, Silver, and Gold layers. It leverages Docker for containerization, Apache Airflow for orchestration, MinIO for object storage, and PostgreSQL for data persistence. Gold-layer tables are exposed for KPIs and dashboards, and the workflow is automated with GitHub Actions for CI/CD.",
+    "role": "Data Engineering & ETL Developer",
+    "technologies": ["Python", "Pandas", "PostgreSQL", "Apache Airflow", "Docker", "MinIO", "Databricks", "SQL", "CI/CD", "GitHub Actions"],
+    "methodology": [
+      {
+        "step": "Source Data Collection",
+        "description": "Collect source data from CRM and ERP CSV files which include customer, product, and sales information."
+      },
+      {
+        "step": "Bronze Layer – Raw Ingestion",
+        "description": "Load raw CSV files into PostgreSQL Docker container without modification, preserving original structure and traceability."
+      },
+      {
+        "step": "Silver Layer – Cleansing & Transformation",
+        "description": "ETL scripts clean and standardize the data: normalize customer and product IDs, handle slow-changing dimensions, remove inconsistencies, and enrich sales data with customer and product information."
+      },
+      {
+        "step": "Gold Layer – Business Modeling & KPIs",
+        "description": "Aggregated gold-layer tables are created with business-ready KPIs such as sales by category, top customers, product maintenance counts, and sales trends over time."
+      },
+      {
+        "step": "Orchestration & Automation",
+        "description": "Apache Airflow DAGs orchestrate the ETL workflow, handling task dependencies, retries, and logging. Docker Compose ensures containerized reproducibility, and GitHub Actions automate ETL runs and testing."
+      },
+      {
+        "step": "Dashboarding & Analytics",
+        "description": "Gold tables are visualized via dashboards (Databricks) for actionable insights, supporting sales analysis, product monitoring, and customer segmentation."
+      }
+    ],
+    "outcomes": [
+      "Designed and implemented a full end-to-end ETL pipeline for retail analytics using Docker, Airflow, and PostgreSQL.",
+      "Created Bronze, Silver, and Gold layers following the Medallion Architecture for clear data lineage and quality control.",
+      "Implemented ETL scripts handling CSV ingestion, data cleaning, SCD handling, and enrichment of sales data with customer and product details.",
+      "Orchestrated pipeline execution with Airflow DAGs and automated workflow via GitHub Actions CI/CD.",
+      "Used MinIO to simulate cloud object storage for raw and intermediate datasets.",
+      "Generated gold-layer tables for KPIs, including sales per category, top customers, active products, and maintenance counts.",
+      "Enabled interactive dashboards and reporting, providing business-ready analytics and actionable insights."
+    ],
+    "repoUrl": "https://github.com/salmanzebmalik/airflow-etl-retail-analytics",
+    "application": "This project demonstrates how companies can build modern analytics platforms that ingest heterogeneous CRM and ERP data, transform and cleanse it, and produce business-ready metrics and dashboards. The Medallion Architecture ensures data traceability and quality, while Airflow and Docker provide automated, reproducible, and production-ready orchestration. Stakeholders can monitor KPIs, analyze product performance, segment customers, and track sales trends efficiently."
+  },
+  {
     slug: "sql-data-warehouse-and-analytics",
     title: "SQL Data Warehouse & Analytics Platform",
     subtitle: "End-to-end Bronze→Silver→Gold pipeline for retail analytics",

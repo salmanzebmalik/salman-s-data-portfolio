@@ -27,6 +27,9 @@ const SKILLS = [
   "Hadoop",
   "MapReduce",
   "Databricks",
+  "Github Actions",
+  "MinIO",
+  "Apache Airflow",
 
   "Power BI",
   "KPI Dashboards",
